@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-black);
+  background: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px var(--spacing-xl) var(--spacing-xl);
+}
+
+/* ---- Header + Image Section ---- */
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  text-align: center;
+  max-width: 544px;
+}
+
+.header-text h1 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--color-black);
+}
+
+.header-text p {
+  font-size: var(--line-height-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-subheading);
+  color: var(--color-medium-gray);
+}
+
+/* ---- Image Frame ---- */
+
+.image-frame {
+  background: var(--color-faint-gray);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--corner-md);
+  padding: var(--spacing-md);
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-container {
+  border-radius: var(--corner-sm);
+  overflow: hidden;
+  height: 222px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---- Button ---- */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  background: var(--color-brand);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--corner-pill);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  width: 292px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button span {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text-on-neutral);
+}
+
+.button .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* ---- Paragraphs Section ---- */
+
+.paragraphs {
+  display: flex;
+  gap: var(--spacing-xl);
+  align-items: flex-start;
+}
+
+.paragraph-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.paragraph-col .para-heading {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-medium-gray);
+}
+
+.paragraph-col .para-body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-small);
+  color: var(--color-medium-gray);
+}
+
+.paragraph-col .text-link {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body-small);
+  color: var(--color-purple);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paragraph-col .text-link:hover {
+  text-decoration: underline;
+}
