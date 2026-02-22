@@ -149,7 +149,7 @@ body {
   font-size: var(--font-size-body-small);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-body-small);
-  color: var(--color-purple);
+  color: var(--color-dark-brown);
   text-decoration: none;
   cursor: pointer;
 }
