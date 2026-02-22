@@ -1,0 +1,19 @@
+---
+description: Tech stack and conventions for cursor-sandbox-02
+alwaysApply: true
+---
+
+# Project Stack
+
+- React 19 + Vite (no TypeScript)
+- Plain CSS with CSS custom properties for design tokens -- no Tailwind
+- Design tokens live in `src/tokens.css` (colors, spacing, typography, corners)
+- Components are `.jsx` files in `src/`
+- Inter font loaded via Google Fonts in `index.html`
+
+# Conventions
+
+- Use CSS custom properties from `src/tokens.css` instead of hardcoded values
+- When adding new design tokens, add them to `src/tokens.css` first
+- Keep component styles in `src/App.css` (or colocated CSS files as the project grows)
+- Assets go in `src/assets/`

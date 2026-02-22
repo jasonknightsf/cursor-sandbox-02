@@ -1,0 +1,21 @@
+---
+description: Rules for pulling designs from Figma via MCP
+alwaysApply: true
+---
+
+# Figma MCP Workflow
+
+When pulling a design from Figma:
+
+1. Use `get_design_context` to get the component structure
+2. Use `get_variable_defs` to extract design tokens/variables
+3. Use `get_screenshot` for visual reference
+4. Map Figma variables to CSS custom properties in `src/tokens.css`
+5. Convert generated Tailwind code to plain CSS using the project's token system
+6. Download image/SVG assets from the Figma MCP localhost server into `src/assets/`
+
+# Asset Handling
+
+- If Figma MCP returns a localhost source for an image or SVG, download it to `src/assets/`
+- Do not use placeholder images when real assets are available
+- Do not add icon packages -- use assets from the Figma payload
